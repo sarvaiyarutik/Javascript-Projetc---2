@@ -1,0 +1,111 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#000814;
+    overflow:hidden;
+}
+
+/* Grid Background */
+
+body{
+    background-image:
+    linear-gradient(rgba(0,255,255,.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,.1) 1px, transparent 1px);
+    background-size:40px 40px;
+    animation:gridMove 10s linear infinite;
+}
+
+@keyframes gridMove{
+    from{
+        background-position:0 0;
+    }
+    to{
+        background-position:40px 40px;
+    }
+}
+
+/* Form */
+
+form{
+    width:430px;
+    padding:40px;
+    background:rgba(0,20,40,.8);
+    clip-path:polygon(
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    90% 100%,
+    10% 100%,
+    0 90%,
+    0 10%);
+    border:2px solid cyan;
+    box-shadow:
+    0 0 20px cyan,
+    0 0 60px rgba(0,255,255,.3);
+}
+
+h1{
+    color:cyan;
+    text-align:center;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+label{
+    color:white;
+    display:block;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    background:black;
+    border:2px solid cyan;
+    color:cyan;
+    font-size:18px;
+    outline:none;
+    margin-bottom:20px;
+}
+
+input:focus{
+    box-shadow:0 0 20px cyan;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:transparent;
+    border:2px solid cyan;
+    color:cyan;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+button:hover{
+    background:cyan;
+    color:black;
+    letter-spacing:3px;
+}
+
+#result{
+    margin-top:25px;
+    text-align:center;
+    color:#00ff99;
+    font-size:26px;
+    font-weight:bold;
+}
+

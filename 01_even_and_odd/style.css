@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(-45deg,#ff6b6b,#4834d4,#00d2d3,#10ac84);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#form{
+    width: 400px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.3);
+    transition: 0.5s;
+    animation: updown 3s ease-in-out infinite;
+}
+
+#form:hover{
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 0 50px cyan;
+}
+
+@keyframes updown{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 10px white;
+    }
+    to{
+        text-shadow: 0 0 30px cyan;
+    }
+}
+
+label{
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+input:focus{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px cyan;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: cyan;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px cyan;
+}
+
+#result{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}

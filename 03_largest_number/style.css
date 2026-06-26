@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#1e3c72,#2a5298,#6dd5fa);
+    background-size: 300% 300%;
+    animation: bg 8s infinite alternate;
+}
+
+@keyframes bg{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_form{
+    width: 420px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.3);
+    animation: popup .8s ease;
+}
+
+@keyframes popup{
+    from{
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.form_type{
+    margin-bottom: 18px;
+}
+
+label{
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+input:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px cyan;
+}
+
+.btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#00c6ff,#0072ff);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px cyan;
+}
+
+#result{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff00;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 5px yellow;
+    }
+    to{
+        text-shadow: 0 0 20px yellow,
+                     0 0 35px yellow;
+    }
+}
+
+@media(max-width:480px){
+
+    .main_form{
+        width:90%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    input,
+    .btn{
+        font-size:16px;
+    }
+
+}
