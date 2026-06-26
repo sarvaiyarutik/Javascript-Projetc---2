@@ -16,7 +16,7 @@ A collection of beginner-friendly JavaScript projects using HTML, CSS & JavaScri
   <tr><td>1</td><td>Even or Odd</td><td><a href="https://codepen.io/sarvaiya-rutik/pen/myRwYrE">View</a></td></tr>
   <tr><td>2</td><td>Prime Number</td><td><a href="https://codepen.io/sarvaiya-rutik/pen/wBgeboe
 ">View</a></td></tr>
-  <tr><td>3</td><td>Largest Number</td><td><a href="">View</a></td></tr>https://codepen.io/sarvaiya-rutik/pen/YPNQbNy
+  <tr><td>3</td><td>Largest Number</td><td><a href="https://codepen.io/sarvaiya-rutik/pen/YPNQbNy">View</a></td></tr>https://codepen.io/sarvaiya-rutik/pen/YPNQbNy
   <tr><td>4</td><td>Reverse</td><td><a href="https://codepen.io/sarvaiya-rutik/pen/bNgRygr">View</a></td></tr>
  
 
